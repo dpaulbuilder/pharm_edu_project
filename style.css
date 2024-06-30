@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    color: black;
+}
+
+.logo img {
+    max-width: 130px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+section, footer, aside {
+    padding: 5px 5%;
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+}
+
+aside {
+    padding-bottom: 30px;
+}
+
+aside fieldset {
+    padding-bottom: 20px;
+}
+
+aside legend {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h1 {
+    padding-top: 50px;
+}
+
+.anim {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.trans {
+    font-size: 1.5rem;
+    color: white;
+    padding: 5px;
+    padding-left: 70px;
+    background-color: rgb(56, 56, 110);
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    animation: moveHorizontally 10s linear infinite;
+}
+
+@keyframes moveHorizontally {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .header .logo img {
+        max-width: 100px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .image-container .text {
+        font-size: 1.5rem;
+    }
+
+    section, footer, aside {
+        padding: 5px 10px;
+    }
+}
+
